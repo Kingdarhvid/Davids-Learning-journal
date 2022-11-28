@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header, 
+.nav-bar, 
+.hero, 
+.blog, 
+.blog-images, 
+.testimony, 
+.article-img, 
+.about-me{
+    width: 100%;
+}
+.header-container, 
+.hero-container,
+ .hero-content,
+ .hero-header,
+ .testimony-content,
+ .container{
+    width: 90%;
+}
+.header-container,
+.hero-container,
+.container,
+.testimony-content{
+    margin-inline: auto;
+}
+.nav-bar,
+.nav-menu,
+.logo a{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar,
+.nav-menu{
+    justify-content: space-between;
+ 
+}
+.nav-item{
+    position: relative;
+}
+
+.nav-item::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: -7px;
+    height: 3px;
+    background-color: #0E0E0E;
+    transition: all 0.5s ease-in-out;
+}
+.nav-item:hover::after{
+    width: 100%;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    color: #0E0E0E;
+    box-shadow: 0 -6px 10px;
+    z-index: 9999;
+}
+.header-container{
+    margin-top: 1em;
+   
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #0E0E0E;
+}
+.nav-bar{ 
+    padding: 1.25em 1em;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-menu{
+    margin-left: auto;
+    gap: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.logo a{
+    justify-content: center;
+    gap: 0.3em;
+}
+.logo-img{
+    width: 23.16px;
+    display: inline-block;
+    margin-top: 0;
+}
+.logo-header{
+    letter-spacing: -0.03em;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+main{
+    width: 100%;
+}
+
+
+/* hero */
+.hero{
+    background-image: url("/Images/article-image-hero.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+.hero-container{
+    color: #fff;
+}
+.hero-content{
+    padding-top: 5em;
+}
+.date{
+    font-size: 0.75rem;
+    margin-bottom: 0.6em;
+    
+}
+.hero-header{
+    font-size: 2rem;
+    margin-bottom: 0.6em;
+}
+.hero-subheader{
+    max-width: 600px;
+    margin-bottom: 1em;
+}
+/* blog */
+.blog{
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.blog-date{
+    font-size: 0.875rem;
+    margin: 1em 0;
+    opacity: 0.6;
+}
+.blog-header{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0.2em;
+}
+.content-links{
+    color: purple;
+}
+.blog-section{
+    width: 95%;
+    margin-top: 3em;
+    margin-inline: auto;
+    /* padding: 3.3em; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2em;
+
+}
+.view-more{
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    margin: 1.35em 0 1.6em 0;
+    cursor: pointer;
+}
+
+
+/* testimony */
+
+.testimony-content{
+    padding-top: 3em;
+    margin-top: 5.5em;
+
+}
+.article-img{
+    border-radius: 5px;
+    max-height: 191px;
+}
+.article p, .article h5{
+    margin-top: 1.25em;
+}
+.article h5{
+    font-size: 1.1rem;
+}
+
+/* recent */
+.recent{
+    margin-bottom: 1.2em;
+}
+.recent h4{
+    text-align: center;
+    margin: 1em 0;
+}
+
+/* about me */
+.about-me{
+    margin-top: 5.5em;
+}
+.about-me-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+   
+}
+.intro{
+    width: 80%;
+    margin-bottom: 0.75em;
+}
+.david-img{
+    width: 182px;
+    height: 182px;
+    /* border-radius: 50%; */
+}
+
+/* contact */
+.contact{
+    margin-top: 7em;
+    text-align: center;
+}
+.contact-container{
+    width: 90%;
+    margin-inline: auto;
+}
+.contact h2{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+.contact p{
+    margin-bottom: 2.5em;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+.contact h3{
+    font-size: 1.8rem;
+    margin-bottom: 0.9em;
+}
+.fa-brands{
+  font-size: 3rem;
+  color: #1A6CE8;
+  padding: 0.3em;
+  background: #F3F1FF;
+border-radius: 10.3029px;
+margin-left: 0.2em;
+transition: 0.3s ease-in-out;
+}
+.fa-brands:hover{
+    transform: scale(1.2);
+}
+
+.btn{
+    display: inline-block;
+    width: 60%;
+    max-width: 600px;
+    padding: 1em 1.2em;
+    margin: 1.5em 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    background: #1A6CE8;
+    color: #fff;
+    cursor: pointer;
+}
+.primary-btn:hover{
+    background-color: transparent;
+    color: #1A6CE8;
+    border: 1px solid #1A6CE8;
+}
+
+/* footer */
+footer{
+    background: #202020;
+    text-align: center;
+    padding: 2.3em 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+footer h5{
+    letter-spacing: -0.03em;
+    color:  #ECECEC;;
+}
+footer p{
+    color:#D7D7D7;
+    
+}
+.bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 725px) {
+
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+        background-color: #0E0E0E;
+        cursor: pointer;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 92%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: #fff;
+    
+    }
+    .nav-item{
+        margin: 3em 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .blog-3{
+        margin-bottom: 1.2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero{
+        padding-top: 15em;
+    }
+    .about-me-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .intro{
+        font-size: 2.3em;
+        margin-bottom: 0.2em;
+        line-height: 0.95;
+    }
+    .container{
+        width: 80%;
+    }
+    .article h5{
+        font-size: 1.3em;
+    }
+    .article-img{
+        max-height: 490px;
+        max-width: 1100px;
+        width: 85%;
+        display: block;
+        margin-inline: auto;
+    }
+    .article{
+        font-size: 1.1em;
+        width: 85%;
+        margin-top: 3em;
+        margin-inline: auto;
+    }
+    .recent h4{
+        font-size: 1.4em;
+    }
+    .testimony-container{
+        width: 70%;
+        margin-inline: auto;
+    }
+    .testimony-subheader{
+        max-width: 900px;
+    }
+    .testimony-article{
+        width: 70%;
+        margin-inline: auto;
+    }
+    .contact{
+        padding-top: 5em;
+    }
+}
+
+
